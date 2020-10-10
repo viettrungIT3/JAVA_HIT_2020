@@ -27,16 +27,24 @@ public class cau4 {
         }
         int[] prime = new int[100];
         int j = 0;
-        for (int i = 2; i < 5000; i++) {
-            if (isPrime(i)) {
-                prime[j++] = i;
-                //System.out.println(prime[j] + " ");
-                //j++;
+//        for (int i = 2; i < 5000; i++) {
+//            if (isPrime(i)) {
+//                prime[j++] = i;
+//                //System.out.println(prime[j] + " ");
+//                //j++;
+//            }
+//            if (j == 99) {
+//                break;
+//            }
+//        }
+        int t = 0;
+        while ( j < n ){
+            if (isPrime(t)) {
+                prime[j++] = t;
             }
-            if (j == 99) {
-                break;
-            }
+            t++;
         }
+        //end tao mang prime
         int sum = 0;
         for (int i = 0; i < a.length; i++) {
             sum += ( isPrime(a[i]) ? a[i] + prime[i] - i : a[i] );

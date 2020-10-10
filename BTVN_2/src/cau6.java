@@ -26,6 +26,7 @@ public class cau6 {
 //            }
 //        }
         str = XuLyChuoi(str);
+
         str = str.trim();
         System.out.println("str = " +str );
 

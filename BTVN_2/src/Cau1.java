@@ -15,7 +15,8 @@ public class Cau1 {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
         //System.out.println(" 3 so do la: " +a +b +c);
-        int max = Max( (Max( a, b)), c);
+        //int max = Max( (Max( a, b)), c);
+        int max = Math.max( (Math.max( a, b)), c);
         System.out.println(" Max = " + max);
     }
 }
