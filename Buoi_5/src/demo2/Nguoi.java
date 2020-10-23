@@ -1,2 +1,5 @@
-package demo2;public class Nguoi {
+package demo2;
+
+public class Nguoi {
+
 }
