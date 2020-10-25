@@ -31,4 +31,22 @@ public class SinhVien extends Nguoi {
     public void setKhoaHoc(int khoaHoc) {
         this.khoaHoc = khoaHoc;
     }
+
+    @Override
+    public String toString() {
+        return "SinhVien{" +
+                "maSV='" + maSV + '\'' +
+                ", nganh='" + nganh + '\'' +
+                ", khoaHoc=" + khoaHoc +
+                ", hoTen='" + hoTen + '\'' +
+                ", ngaySinh='" + ngaySinh + '\'' +
+                ", queQuan='" + queQuan + '\'' +
+                '}';
+    }
+
+    public void XuatSV() {
+        System.out.printf("%20 ", maSV);
+        this.Xuat();
+        System.out.printf("%20 %20 ", khoaHoc, khoaHoc);
+    }
 }

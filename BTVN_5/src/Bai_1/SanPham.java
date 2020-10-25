@@ -24,6 +24,38 @@ public class SanPham {
         System.out.printf("%15s %15s %15s %15s ", maSanPham, tenSanPham, tenHangSX, ngayNhap);
     }
 
+    public String getMaSanPham() {
+        return maSanPham;
+    }
+
+    public void setMaSanPham(String maSanPham) {
+        this.maSanPham = maSanPham;
+    }
+
+    public String getTenSanPham() {
+        return tenSanPham;
+    }
+
+    public void setTenSanPham(String tenSanPham) {
+        this.tenSanPham = tenSanPham;
+    }
+
+    public String getTenHangSX() {
+        return tenHangSX;
+    }
+
+    public void setTenHangSX(String tenHangSX) {
+        this.tenHangSX = tenHangSX;
+    }
+
+    public String getNgayNhap() {
+        return ngayNhap;
+    }
+
+    public void setNgayNhap(String ngayNhap) {
+        this.ngayNhap = ngayNhap;
+    }
+
     @Override
     public String toString() {
         return "SanPham{" +

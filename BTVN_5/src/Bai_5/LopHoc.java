@@ -1,5 +1,8 @@
 package Bai_5;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class LopHoc {
     private String maLop;
     private String tenLop;
@@ -39,8 +42,31 @@ public class LopHoc {
         return x;
     }
 
-    public void setX(SinhVien[] x) {
-        this.x = x;
+
+
+    public void NhapX() {
+        Scanner scanner = new Scanner(System.in);
+        SinhVien[] X = new SinhVien[ n];
+        for (int i = 0; i < n; i++) {
+//            SinhVien A = new SinhVien();
+            System.out.println("Nhâp SV thứ " + (i+1));
+            X[i] = new SinhVien();
+            System.out.print("  Nhập mã SV: ");
+            scanner.nextLine();
+            X[i].setMaSV( scanner.nextLine());
+            X[i].Nhap();
+            System.out.print("  Nhập tên ngành: ");
+            X[i].setNganh( scanner.nextLine());
+            System.out.print("  Nhập khóa: ");
+            X[i].setKhoaHoc( scanner.nextInt());
+        }
+    }
+
+    public void XuatX() {
+        for (int i = 0; i < n; i++) {
+            x[i].XuatSV();
+        }
+
     }
 
     public int getN() {
@@ -57,5 +83,17 @@ public class LopHoc {
 
     public void setGiaoVien(String giaoVien) {
         this.giaoVien = giaoVien;
+    }
+
+    @Override
+    public String toString() {
+        return "LopHoc{" +
+                "maLop='" + maLop + '\'' +
+                ", tenLop='" + tenLop + '\'' +
+                ", ngayMo='" + ngayMo + '\'' +
+                ", x=" + Arrays.toString(x) +
+                ", n=" + n +
+                ", giaoVien='" + giaoVien + '\'' +
+                '}';
     }
 }

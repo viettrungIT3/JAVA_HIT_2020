@@ -18,8 +18,6 @@ public class Nguoi {
     }
 
     public void Xuat() {
-        System.out.println("Họ và tên: " + hoTen);
-        System.out.println("Ngày sinh: " + ngaySinh);
-        System.out.println("Quê quán: " + queQuan);
+        System.out.printf("%20 %20 %20 " + hoTen, ngaySinh, queQuan);
     }
 }

@@ -17,6 +17,17 @@ public class RunMain {
         for ( DieuHoa x : list) {
             x.Xuat();
         }
-
+        int min = 100000000;
+        for ( DieuHoa x : list) {
+            if ( min > x.getGiaBan()  && x.getTenHangSX().compareTo("Electrolux") == 0) {
+                min = x.getGiaBan();
+            }
+        }
+        System.out.println("DS ... thấp nhất.");
+        for ( int i = 0; i<n; i++) {
+            if ( min == list.get(i).getGiaBan() ) {
+                list.get(0).Xuat();
+            }
+        }
     }
 }

@@ -20,4 +20,12 @@ public class DieuHoa extends SanPham {
         System.out.printf("%15s %15s ", congSuat, giaBan);
         System.out.println();
     }
+
+    public int getGiaBan() {
+        return giaBan;
+    }
+
+    public void setGiaBan(int giaBan) {
+        this.giaBan = giaBan;
+    }
 }
